@@ -44,12 +44,15 @@ function startTimer() {
 }
 
 function runQuestions() {
+    // sets up the index of questions and lists the current question
     let currentQuestion = questions[currentQuestionIndex];
     let askQuestion = document.querySelector("#question-ask");
     askQuestion.textContent = currentQuestion.ask;
 
+    // clears out multiple choice list of previous question
     choicesEl.innerHTML = "";
 
+    // turns choices into buttons by question
     currentQuestion.choices.forEach(function (choices, i) {
         let choiceButton = document.createElement("button");
         choiceButton.setAttribute("class", "choices");
@@ -64,8 +67,10 @@ function runQuestions() {
 }
 
 function nextQuestion() {
-    progressEl.removeAttribute("class", "hide"); // show progress statements
+    // show progress statements
+    progressEl.removeAttribute("class", "hide"); 
 
+    // correct vs incorrect conditions
     if (this.value !== questions[currentQuestionIndex].correct) {
         timeCount -= 10;
         if (timeCount < 0) { timeCount = 0; }
@@ -78,6 +83,7 @@ function nextQuestion() {
         progressEl.textContent = "Correct, nice work!";
     }
 
+    // moves along the array of questions or ends the quiz if there are none left
     currentQuestionIndex++;
 
     if (currentQuestionIndex === questions.length) {
@@ -116,5 +122,6 @@ function storeScore(event) {
     }
 }
 
+// button actions
 START_BUTTON.addEventListener("click", startQuiz);
 SUBMIT_BUTTON.addEventListener("click", storeScore);

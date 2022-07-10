@@ -7,6 +7,7 @@ let highScores = JSON.parse(localStorage.getItem("highScores"));
 // printing the high scores to the page
 function printHighscores() {
 
+  // sort high scores by high to low
   highScores.sort(function compareFn(a,b) {
     return b.score - a.score;
   })
@@ -31,4 +32,5 @@ function clearHighscoreList() {
 
 CLEAR_BUTTON.addEventListener("click", clearHighscoreList);
 
+// run this on init
 printHighscores();

@@ -72,10 +72,6 @@ button {
     padding: 10px;
 }
 
-/* .intro-page {
-
-} */
-
 .hide {
     display: none;
 }
@@ -94,20 +90,3 @@ button {
     padding: 5px;
     margin: 2% 5%;
 }
-
-/* #outro-page {
-
-} */
-
-/*
-Need: 
-    General page styling
-
-    questions  
-    answer buttons
-    "wrong"/"correct"
-    Timer
-    final score
-    Highscores page
-
-*/

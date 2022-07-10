@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coding Quiz</title>
 
-  <body>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <header>
     <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    <div class="timer">Timer: <span id="time">0</span></div>
+  </header>
 
-    <!--TODO: continue here -->
+  <div class="content-box">
+    <div class="intro-page">
+      <h1>Welcome to the Code Quiz!</h1>
+      <p>This quiz will test your knowledge of JavaScript!
+        Answer each question before the timer runs out and then submit your score for entry into the list of high
+        scores!
+        But remember, each wrong answer will deduct time from the clock. Get ready...set...</p>
+      <button id="start-btn">Go!</button>
+    </div>
 
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
-  </body>
+    <!--intro-page will be hidden when start-btn is clicked-->
+
+    <div id="quiz-questions" class="hide">
+      <h2 id="question-ask"></h2>
+      <div id="choices"></div>
+    </div>
+
+    <div id="progress" class="hide"></div>
+
+    <!--questions will be hidden once all questions have been asked-->
+
+    <div id="outro-page" class="hide">
+      <h1>That's it!</h1>
+      <p>You scored <span id="user-score"></span>. If you want to log your score, enter your initials below!</p>
+      <p>Enter initials: <input type="text" id="initials" max="4" /></p>
+      <button id="submit-btn">Submit my score!</button>
+    </div>
+
+  </div>
+
+  <script src="./assets/js/questions.js"></script>
+  <script src="./assets/js/logic.js"></script>
+</body>
+
 </html>

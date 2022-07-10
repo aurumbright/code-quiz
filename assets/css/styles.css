@@ -1,0 +1,113 @@
+:root {
+    --background: #fffffe;
+    --titlefont: #00214d;
+    --questionfont: #1b2d45;
+    --button: #00ebc7;
+    --buttonfont: #00214d;
+    --highlight: #ff5470;
+    --highlight2: #fde24f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--titlefont);
+    margin: 3% 0%;
+    text-align: center;
+    display: block;
+}
+
+a {
+    color: var(--buttonfont);
+}
+
+p {
+    font-size: 16px;
+    margin: 3% 0%;
+}
+
+ol {
+    padding-left: 0%;
+    overflow: auto;
+}
+
+li {
+    background-color: var(--highlight);
+    list-style-position: inside;
+}
+
+li:nth-child(odd) {
+    background-color: var(--highlight2);
+}
+
+button {
+    background-color: var(--button);
+    color: var(--buttonfont);
+    border-radius: 5px;
+    font-size: 100%;
+    width:max-content;
+    padding: 5px;
+    margin: 0 50%;
+}
+
+.content-box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* .intro-page {
+
+} */
+
+.hide {
+    display: none;
+}
+
+.quiz-questions {
+    color: var(--questionfont);
+    display: block;
+}
+
+#choices button {
+    display: block;
+    background-color: var(--highlight);
+    color: var(--buttonfont);
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 5px;
+    margin: 2% 5%;
+}
+
+/* #outro-page {
+
+} */
+
+/*
+Need: 
+    General page styling
+
+    questions  
+    answer buttons
+    "wrong"/"correct"
+    Timer
+    final score
+    Highscores page
+
+*/

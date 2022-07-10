@@ -2,13 +2,15 @@
 
 ## Description
 
+This is an interactive code quiz to test the user's knowledge of basic JavaScript. It contains a timer, five single-select multiple choice question, and a page cataloging the high scores of a single browser session. There are also audio elements that play when the user makes a correct or incorrect choice.
 
+The web app can be seen [here](https://aurumbright.github.io/code-quiz/).
 
 ## Mock-Up
 
-The following animation demonstrates the application functionality:
+The following gif demonstrates the application functionality (minus the audio):
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./04-web-apis-homework-demo.gif)
+![A user clicks through an interactive coding quiz demonstrating correct and incorrect answers as well as the high score page and resetting the scores.](./assets/Coding%20Quiz.gif)
 
 
 ## User Story

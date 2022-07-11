@@ -64,6 +64,11 @@ button {
     width:max-content;
     padding: 5px;
     margin: 0 50%;
+    transition-duration: 3ms;
+}
+
+button:hover {
+    background-color: var(--highlight);
 }
 
 .content-box {
@@ -89,4 +94,8 @@ button {
     font-size: 100%;
     padding: 5px;
     margin: 2% 5%;
+}
+
+#choices button:hover {
+    background-color: var(--button);
 }

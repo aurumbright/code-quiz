@@ -34,6 +34,45 @@ const questions = [
         correct: "A comma-separated list of colon-separated name:value pairs enclosed within curly braces"
     },
     {
+        ask: "In the array ['apples', 'oranges', 'bananas,' 'kiwis'], what item is at index 4?",
+        choices: ["apples",
+            "oranges",
+            "bananas",
+            "kiwis",
+            "None of these, because there is no item at index 4"],
+        correct: "None of these, because there is no item at index 4"
+    },
+    {
+        ask: "In which HTML element does JavaScript belong?",
+        choices: ["<JS>",
+            "<script>",
+            "<code>",
+            "<javascript>"],
+        correct: "<script>"
+    },
+    {
+        ask: "TRUE OR FALSE: JavaScript is case-sensitive.",
+        choices: ["True",
+            "False"],
+        correct: "True"
+    },
+    {
+        ask: "With which of the following can JavaScript variable names NOT start?",
+        choices: ["Letters",
+            "Underscores",
+            "Dollar signs",
+            "Numbers"],
+        correct: "Numbers"
+    },
+    {
+        ask: "What is the output of the code snippet 'let js = 'JavaScript' console.log(js.charAt(7))'?",
+        choices: ["r",
+            "c",
+            "i",
+            "7"],
+        correct: "c"
+    },
+    {
         ask: "What can JavaScript NOT do?",
         choices: ["Add or effect the content of HTML",
             "Add or effect styling on the page",

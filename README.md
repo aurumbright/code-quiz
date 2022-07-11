@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an interactive code quiz to test the user's knowledge of basic JavaScript. It contains a timer, five single-select multiple choice question, and a page cataloging the high scores of a single browser session. There are also audio elements that play when the user makes a correct or incorrect choice.
+This is an interactive code quiz to test the user's knowledge of basic JavaScript. It contains a timer, five single-select multiple choice questions, and a page cataloging the high scores of a single browser session. There are also audio elements that play when the user makes a correct or incorrect choice.
 
 The web app can be seen [here](https://aurumbright.github.io/code-quiz/).
 
